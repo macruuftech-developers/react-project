@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Login from "./components/Login";
+import Feed from "./components/Feed";
 
 const App = () => {
   const [user, setUser] = useState("");
@@ -10,6 +11,7 @@ const App = () => {
     <div>
       <h2>Hi {user}</h2>
       <button onClick={() => setUser("")}>Loguot</button>
+      <Feed user={user} />
     </div>
   );
 };
