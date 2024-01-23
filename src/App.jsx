@@ -4,6 +4,8 @@ import Feed from "./components/Feed";
 
 const App = () => {
   const [user, setUser] = useState("");
+  // user = waaxa kujir useState
+  // setUser = waxa kujir useState kubdale kartaah
 
   if (!user) return <Login setUser={setUser} />;
 
